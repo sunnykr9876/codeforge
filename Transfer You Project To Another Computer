@@ -1,0 +1,27 @@
+1. Install the Required Software: On the new computer.
+
+Download and install XAMPP.
+Download and install Tesseract OCR.
+Crucial: Make sure Tesseract installs to C:\Program Files\Tesseract-OCR on the new computer, otherwise you will have to update the path in your apply.
+php and edit_application.php files! 
+
+2. Paste the Project Files at C:\xampp\htdocs\
+
+3.Export the Database:From your current computer.
+
+Open your browser and go to http://localhost/phpmyadmin.
+Click on your scholarship_db database on the left sidebar.
+Click the Export tab at the top of the screen.
+Leave the settings on "Quick" and format as "SQL", then click Export (or "Go").
+This will download a file named scholarship_db.sql. Save this file to a USB drive or email it to yourself.
+
+4.Import the Database:On the new computer.
+
+Open a browser on the new PC and go to http://localhost/phpmyadmin.
+Click New on the left sidebar.
+Name the database exactly as before: scholarship_db and click Create.
+Click on the new scholarship_db database, then click the Import tab at the top.
+Click Choose File, select the scholarship_db.sql file from your USB drive, scroll down, and click Import.
+
+
+
