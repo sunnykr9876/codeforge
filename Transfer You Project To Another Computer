@@ -1,7 +1,11 @@
 1. Install the Required Software: On the new computer.
 
 Download and install XAMPP.
+https://sourceforge.net/projects/xampp/
+
 Download and install Tesseract OCR.
+https://github.com/tesseract-ocr/tesseract
+
 Crucial: Make sure Tesseract installs to C:\Program Files\Tesseract-OCR on the new computer, otherwise you will have to update the path in your apply.
 php and edit_application.php files! 
 
