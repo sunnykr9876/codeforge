@@ -1,0 +1,21 @@
+The "Soft" Reset (Keep your existing users)
+If you deleted a few rows and just want the next number to fill the gap or start right 
+after your current last user, run this SQL command in phpMyAdmin:
+
+ALTER TABLE users AUTO_INCREMENT = 1;
+
+-------------------------------------------
+
+The "Hard" Reset (Wipe everything and start fresh)
+If you want to delete all test users, profiles, and applications and make the database act like it was just created today (starting at ID 1), you use the TRUNCATE command.
+
+Because your tables are linked together with Foreign Keys, you have to wipe the child tables before the parent table. Run this exact code in the SQL tab of your scholarship_db:
+
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE TABLE applications;
+TRUNCATE TABLE profiles;
+TRUNCATE TABLE users;
+
+SET FOREIGN_KEY_CHECKS = 1;
